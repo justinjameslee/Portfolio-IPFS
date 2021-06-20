@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "homepage": ".",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "author": "Justin Lee <justinjameslee10@gmail.com> (https://jlee.cf/)",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "material-ui-popup-state": "^1.4.0",
+    "next": "^9.0.3",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-async": "^7.0.5",
+    "react-dom": "^16.8.6",
+    "react-particles-js": "^2.7.0",
+    "react-preloading-screen": "^1.0.2",
+    "react-responsive": "^7.0.0",
+    "react-scroll": "^1.7.12",
+    "styled-components": "^4.3.2"
+  }
+}

@@ -1,0 +1,115 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#home {
+  color: white;
+}
+
+.particles {
+  position: absolute;
+  z-index: 0;
+}
+
+.float:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  color: skyblue;
+}
+
+.thumbnail {
+  background: lightgrey;
+  border-radius: 10px;
+  min-height: 255px;
+  min-width: 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: all 3s ease-in-out;
+  &:hover {
+    background-position: bottom;
+  }
+}
+
+.realMobileThumbnail {
+  background: lightgrey;
+  min-height: 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: all 3s ease-in-out;
+  &:hover {
+    background-position: bottom;
+  }
+}
+
+.projectBox {
+  z-index: 5;
+}
+
+.titleBox {
+  padding: 10px;
+}
+
+.datefontBox {
+  font-size: 18;
+  font-weight: 100;
+}
+
+.displayThumbnail {
+  background: lightgrey;
+  min-height: 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-size: contain;
+  }
+}
+
+.mobileThumbnail {
+  height: calc(1280px / 13);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: calc(720px / 13);
+  transition: height 0.5s, width 0.5s, background-position 3s ease-in-out;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background-position: bottom;
+    height: calc(1280px / 8);
+    width: calc(720px / 8);
+  }
+}
+
+.section {
+  padding: 25px;
+  margin-top: 50px;
+}
+
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
